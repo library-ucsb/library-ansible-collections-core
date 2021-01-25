@@ -1,0 +1,9 @@
+---
+# tasks file for roles/yum_config
+
+- name: setup yum proxy
+  ansible.builtin.lineinfile:
+    path: /etc/yum.conf
+    regexp: '^proxy='
+    line: proxy=http://10.3.100.201:3128
+ 
