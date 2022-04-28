@@ -5,5 +5,5 @@
   ansible.builtin.lineinfile:
     path: /etc/yum.conf
     regexp: '^proxy='
-    line: proxy=http://10.3.100.201:3128
+    line: proxy={{ yum_config_proxy }}
  

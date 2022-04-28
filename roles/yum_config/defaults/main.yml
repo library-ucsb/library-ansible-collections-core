@@ -1,2 +1,4 @@
 ---
 # defaults file for roles/yum_config
+yum_config_proxy: 'http://10.3.100.201:3128'
+
